@@ -1,0 +1,1409 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arapey&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rokkitt:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Carme&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap");
+@-webkit-keyframes outro {
+  0% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+@keyframes outro {
+  0% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+* {
+  font-family: 'Rokkitt', serif;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  text-transform: capitalize;
+  overflow-x: hidden;
+}
+
+html ::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html ::-webkit-scrollbar-thumb {
+  background-color: #557a95;
+  border-radius: 1rem;
+}
+
+body {
+  padding-top: 8rem;
+}
+
+section {
+  scroll-margin-top: 8rem;
+  padding: 2rem 6%;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 9rem;
+  padding: 0 6%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #5d5c61;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 0.2rem 0.5rem rgba(40, 38, 18, 0.3);
+          box-shadow: 0 0.2rem 0.5rem rgba(40, 38, 18, 0.3);
+}
+
+header .logo {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .logo:hover .initials {
+  opacity: .5;
+}
+
+header .logo .initials {
+  display: inline-block;
+  color: white;
+  font-size: 3rem;
+  height: 5.9rem;
+  width: 5.9rem;
+  line-height: 5.9rem;
+  border: .15rem solid white;
+  background: #557a95;
+  border-radius: 50%;
+  letter-spacing: .15rem;
+  text-align: center;
+}
+
+header .logo .full-name {
+  display: inline-block;
+  position: absolute;
+  left: 5.5rem;
+  font-size: 2.5rem;
+  color: white;
+  margin-left: 1rem;
+  letter-spacing: .2rem;
+  -webkit-clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+          clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+}
+
+header .logo:hover .full-name {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+header .menu {
+  margin-left: auto;
+}
+
+header .menu a {
+  font-size: 2.2rem;
+  color: white;
+  font-weight: bolder;
+  margin-left: 1.2rem;
+}
+
+header .menu a:hover {
+  opacity: .8;
+  border-bottom: .15rem solid white;
+  padding-bottom: 1rem;
+}
+
+header .icon-container i {
+  font-size: 2.5rem;
+  color: #282612;
+}
+
+header .icon-container i:hover {
+  cursor: pointer;
+}
+
+.home {
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+  -webkit-box-shadow: 0 0.2rem 0.5rem rgba(40, 38, 18, 0.3);
+          box-shadow: 0 0.2rem 0.5rem rgba(40, 38, 18, 0.3);
+}
+
+.home .content-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.home .content-container .image-container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-right: 0.2rem solid #557a95;
+  padding-right: 1rem;
+}
+
+.home .content-container .image-container img {
+  width: 30rem;
+  height: 30rem;
+  border-radius: 50%;
+  border: 0.2rem solid #557a95;
+}
+
+.home .content-container .content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+  padding-left: 1rem;
+}
+
+.home .content-container .content h2 {
+  font-size: 4.5rem;
+  color: #5d5c61;
+  margin-bottom: 2rem;
+}
+
+.home .content-container .content h3 {
+  font-size: 2.5rem;
+  color: #5d5c61;
+  margin-bottom: 3.5rem;
+}
+
+.home .content-container .content h3 i {
+  font-size: 2rem;
+  margin-left: 1rem;
+}
+
+.home .content-container .content .btn {
+  font-size: 2.1rem;
+  background: #557a95;
+  padding: .8rem 1.5rem;
+  border-radius: .5rem;
+  color: white;
+}
+
+.home .content-container .content .btn:hover {
+  cursor: pointer;
+  opacity: .7;
+}
+
+.home .modal {
+  margin: auto;
+  position: relative;
+  padding: 1rem;
+  max-width: 50rem;
+  min-width: 30rem;
+  border: 0.2rem solid #557a95;
+  border-radius: .8rem;
+}
+
+.home .modal::-webkit-backdrop {
+  background: linear-gradient(45deg, #5d5c61, #557a95);
+  opacity: .6;
+}
+
+.home .modal::backdrop {
+  background: linear-gradient(45deg, #5d5c61, #557a95);
+  opacity: .6;
+}
+
+.home .modal .title {
+  font-size: 2rem;
+  color: #557a95;
+  text-align: center;
+  margin-bottom: .5rem;
+}
+
+.home .modal .contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.home .modal .contact-form .first-name,
+.home .modal .contact-form .last-name,
+.home .modal .contact-form .email,
+.home .modal .contact-form .message {
+  width: 100%;
+}
+
+.home .modal .contact-form .first-name input,
+.home .modal .contact-form .first-name textarea,
+.home .modal .contact-form .last-name input,
+.home .modal .contact-form .last-name textarea,
+.home .modal .contact-form .email input,
+.home .modal .contact-form .email textarea,
+.home .modal .contact-form .message input,
+.home .modal .contact-form .message textarea {
+  width: 100%;
+  font-size: 1.8rem;
+  padding: .5rem;
+  color: #5d5c61;
+  border: 0.15rem solid #557a95;
+  border-radius: .5rem;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+}
+
+.home .modal .contact-form .first-name input:focus,
+.home .modal .contact-form .first-name textarea:focus,
+.home .modal .contact-form .last-name input:focus,
+.home .modal .contact-form .last-name textarea:focus,
+.home .modal .contact-form .email input:focus,
+.home .modal .contact-form .email textarea:focus,
+.home .modal .contact-form .message input:focus,
+.home .modal .contact-form .message textarea:focus {
+  border: 0.15rem solid rgba(85, 122, 149, 0.4);
+}
+
+.home .modal .contact-form .first-name input::-webkit-input-placeholder,
+.home .modal .contact-form .first-name textarea::-webkit-input-placeholder,
+.home .modal .contact-form .last-name input::-webkit-input-placeholder,
+.home .modal .contact-form .last-name textarea::-webkit-input-placeholder,
+.home .modal .contact-form .email input::-webkit-input-placeholder,
+.home .modal .contact-form .email textarea::-webkit-input-placeholder,
+.home .modal .contact-form .message input::-webkit-input-placeholder,
+.home .modal .contact-form .message textarea::-webkit-input-placeholder {
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+}
+
+.home .modal .contact-form .first-name input:-ms-input-placeholder,
+.home .modal .contact-form .first-name textarea:-ms-input-placeholder,
+.home .modal .contact-form .last-name input:-ms-input-placeholder,
+.home .modal .contact-form .last-name textarea:-ms-input-placeholder,
+.home .modal .contact-form .email input:-ms-input-placeholder,
+.home .modal .contact-form .email textarea:-ms-input-placeholder,
+.home .modal .contact-form .message input:-ms-input-placeholder,
+.home .modal .contact-form .message textarea:-ms-input-placeholder {
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+}
+
+.home .modal .contact-form .first-name input::-ms-input-placeholder,
+.home .modal .contact-form .first-name textarea::-ms-input-placeholder,
+.home .modal .contact-form .last-name input::-ms-input-placeholder,
+.home .modal .contact-form .last-name textarea::-ms-input-placeholder,
+.home .modal .contact-form .email input::-ms-input-placeholder,
+.home .modal .contact-form .email textarea::-ms-input-placeholder,
+.home .modal .contact-form .message input::-ms-input-placeholder,
+.home .modal .contact-form .message textarea::-ms-input-placeholder {
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+}
+
+.home .modal .contact-form .first-name input::placeholder,
+.home .modal .contact-form .first-name textarea::placeholder,
+.home .modal .contact-form .last-name input::placeholder,
+.home .modal .contact-form .last-name textarea::placeholder,
+.home .modal .contact-form .email input::placeholder,
+.home .modal .contact-form .email textarea::placeholder,
+.home .modal .contact-form .message input::placeholder,
+.home .modal .contact-form .message textarea::placeholder {
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+}
+
+.home .modal .contact-form .first-name input:focus::-webkit-input-placeholder,
+.home .modal .contact-form .first-name textarea:focus::-webkit-input-placeholder,
+.home .modal .contact-form .last-name input:focus::-webkit-input-placeholder,
+.home .modal .contact-form .last-name textarea:focus::-webkit-input-placeholder,
+.home .modal .contact-form .email input:focus::-webkit-input-placeholder,
+.home .modal .contact-form .email textarea:focus::-webkit-input-placeholder,
+.home .modal .contact-form .message input:focus::-webkit-input-placeholder,
+.home .modal .contact-form .message textarea:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+.home .modal .contact-form .first-name input:focus:-ms-input-placeholder,
+.home .modal .contact-form .first-name textarea:focus:-ms-input-placeholder,
+.home .modal .contact-form .last-name input:focus:-ms-input-placeholder,
+.home .modal .contact-form .last-name textarea:focus:-ms-input-placeholder,
+.home .modal .contact-form .email input:focus:-ms-input-placeholder,
+.home .modal .contact-form .email textarea:focus:-ms-input-placeholder,
+.home .modal .contact-form .message input:focus:-ms-input-placeholder,
+.home .modal .contact-form .message textarea:focus:-ms-input-placeholder {
+  opacity: 0;
+}
+
+.home .modal .contact-form .first-name input:focus::-ms-input-placeholder,
+.home .modal .contact-form .first-name textarea:focus::-ms-input-placeholder,
+.home .modal .contact-form .last-name input:focus::-ms-input-placeholder,
+.home .modal .contact-form .last-name textarea:focus::-ms-input-placeholder,
+.home .modal .contact-form .email input:focus::-ms-input-placeholder,
+.home .modal .contact-form .email textarea:focus::-ms-input-placeholder,
+.home .modal .contact-form .message input:focus::-ms-input-placeholder,
+.home .modal .contact-form .message textarea:focus::-ms-input-placeholder {
+  opacity: 0;
+}
+
+.home .modal .contact-form .first-name input:focus::placeholder,
+.home .modal .contact-form .first-name textarea:focus::placeholder,
+.home .modal .contact-form .last-name input:focus::placeholder,
+.home .modal .contact-form .last-name textarea:focus::placeholder,
+.home .modal .contact-form .email input:focus::placeholder,
+.home .modal .contact-form .email textarea:focus::placeholder,
+.home .modal .contact-form .message input:focus::placeholder,
+.home .modal .contact-form .message textarea:focus::placeholder {
+  opacity: 0;
+}
+
+.home .modal .contact-form .first-name textarea,
+.home .modal .contact-form .last-name textarea,
+.home .modal .contact-form .email textarea,
+.home .modal .contact-form .message textarea {
+  height: 18rem;
+}
+
+.home .modal .contact-form .first-name,
+.home .modal .contact-form .last-name,
+.home .modal .contact-form .email {
+  margin-bottom: 1rem;
+}
+
+.home .modal .contact-form .btn {
+  display: inline-block;
+  font-size: 2.1rem;
+  background: #557a95;
+  padding: .6rem 1.2rem;
+  border-radius: .5rem;
+  color: white;
+}
+
+.home .modal .contact-form .btn:hover {
+  cursor: pointer;
+  opacity: .7;
+}
+
+.home .modal #close-modal {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  background: none;
+}
+
+.home .modal #close-modal i {
+  color: #557a95;
+}
+
+.home .modal #close-modal i:hover {
+  cursor: pointer;
+}
+
+.home .modal .status {
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  height: 8rem;
+  width: 8rem;
+  line-height: 8rem;
+  font-size: 3.5rem;
+  color: white;
+  opacity: .8;
+  background: #557a95;
+  border-radius: 50%;
+}
+
+.home .modal .status.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about {
+  background: #5d5c61;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+}
+
+.about .content-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about .content-container .content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border-radius: 2rem;
+  padding: 1.5rem;
+}
+
+.about .content-container .content:hover .summary #q-left {
+  top: -1.5rem;
+}
+
+.about .content-container .content:hover .summary #q-right {
+  bottom: -1.5rem;
+}
+
+.about .content-container .content h3 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: white;
+}
+
+.about .content-container .content .body {
+  position: relative;
+  padding: 1rem;
+}
+
+.about .content-container .content .body .summary {
+  font-size: 2rem;
+  line-height: 1.5;
+  text-transform: none;
+  color: white;
+}
+
+.about .content-container .content .attribution {
+  font-size: 2.2rem;
+  text-align: center;
+  margin-top: 1rem;
+  font-weight: bolder;
+  color: white;
+}
+
+.about .content-container .image-container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-left: .2rem solid white;
+}
+
+.about .content-container .image-container img {
+  width: 30rem;
+  height: 30rem;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 2rem;
+}
+
+.about .content-container .image-container .social-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: .8rem;
+}
+
+.about .content-container .image-container .social-container .twitter,
+.about .content-container .image-container .social-container .insta,
+.about .content-container .image-container .social-container .linked,
+.about .content-container .image-container .social-container .git {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about .content-container .image-container .social-container .twitter a,
+.about .content-container .image-container .social-container .insta a,
+.about .content-container .image-container .social-container .linked a,
+.about .content-container .image-container .social-container .git a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  line-height: 4rem;
+  background: #557a95;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.about .content-container .image-container .social-container .twitter a:hover,
+.about .content-container .image-container .social-container .insta a:hover,
+.about .content-container .image-container .social-container .linked a:hover,
+.about .content-container .image-container .social-container .git a:hover {
+  opacity: .7;
+  border: .1rem solid white;
+}
+
+.about .content-container .image-container .social-container .twitter a i,
+.about .content-container .image-container .social-container .insta a i,
+.about .content-container .image-container .social-container .linked a i,
+.about .content-container .image-container .social-container .git a i {
+  display: inline-block;
+  font-size: 2.5rem;
+  color: white;
+  margin-top: .2rem;
+}
+
+.about .content-container .image-container .social-container .twitter::before,
+.about .content-container .image-container .social-container .insta::before,
+.about .content-container .image-container .social-container .linked::before,
+.about .content-container .image-container .social-container .git::before {
+  position: absolute;
+  top: calc(100% + 1rem);
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  content: attr(data-tooltip);
+  text-align: center;
+  background: #557a95;
+  color: white;
+  font-size: 1.8rem;
+  padding: .5rem .8rem;
+  border-radius: .7rem;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.about .content-container .image-container .social-container .twitter::after,
+.about .content-container .image-container .social-container .insta::after,
+.about .content-container .image-container .social-container .linked::after,
+.about .content-container .image-container .social-container .git::after {
+  position: absolute;
+  content: '';
+  background: #557a95;
+  height: 1.5rem;
+  width: 2.5rem;
+  top: calc(100% + .2rem);
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-clip-path: polygon(50% 0, 100% 100%, 0 100%, 50% 0);
+          clip-path: polygon(50% 0, 100% 100%, 0 100%, 50% 0);
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+}
+
+.about .content-container .image-container .social-container .twitter::before, .about .content-container .image-container .social-container .twitter::after,
+.about .content-container .image-container .social-container .insta::before,
+.about .content-container .image-container .social-container .insta::after,
+.about .content-container .image-container .social-container .linked::before,
+.about .content-container .image-container .social-container .linked::after,
+.about .content-container .image-container .social-container .git::before,
+.about .content-container .image-container .social-container .git::after {
+  opacity: 0;
+}
+
+.about .content-container .image-container .social-container .twitter:hover::before, .about .content-container .image-container .social-container .twitter:hover::after,
+.about .content-container .image-container .social-container .insta:hover::before,
+.about .content-container .image-container .social-container .insta:hover::after,
+.about .content-container .image-container .social-container .linked:hover::before,
+.about .content-container .image-container .social-container .linked:hover::after,
+.about .content-container .image-container .social-container .git:hover::before,
+.about .content-container .image-container .social-container .git:hover::after {
+  opacity: 1;
+}
+
+.projects .chat-app,
+.projects .my-flix {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+
+.projects .chat-app .content-container,
+.projects .my-flix .content-container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border-radius: 1rem;
+  overflow: hidden;
+  padding: 1rem;
+}
+
+.projects .chat-app .content-container .title,
+.projects .my-flix .content-container .title {
+  padding: .5rem;
+}
+
+.projects .chat-app .content-container .title h3,
+.projects .my-flix .content-container .title h3 {
+  color: #5d5c61;
+  font-size: 3rem;
+}
+
+.projects .chat-app .content-container .description,
+.projects .my-flix .content-container .description {
+  font-size: 2.5rem;
+  line-height: 1.4;
+  color: #5d5c61;
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+}
+
+.projects .chat-app .content-container .stack,
+.projects .my-flix .content-container .stack {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-top: 0.15rem solid #557a95;
+  border-bottom: 0.15rem solid #557a95;
+}
+
+.projects .chat-app .content-container .stack .icon-container,
+.projects .my-flix .content-container .stack .icon-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.projects .chat-app .content-container .stack .icon-container i,
+.projects .my-flix .content-container .stack .icon-container i {
+  margin-right: 1rem;
+  font-size: 2.5rem;
+  color: white;
+  width: 4rem;
+  height: 4rem;
+  line-height: 4rem;
+  background: #557a95;
+  border-radius: 1rem;
+  text-align: center;
+  padding-top: .15rem;
+}
+
+.projects .chat-app .content-container .stack .icon-container i:hover,
+.projects .my-flix .content-container .stack .icon-container i:hover {
+  opacity: .7;
+}
+
+.projects .chat-app .content-container .stack .button-container,
+.projects .my-flix .content-container .stack .button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: .5rem;
+}
+
+.projects .chat-app .content-container .stack .button-container .btn,
+.projects .my-flix .content-container .stack .button-container .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #557a95;
+  font-size: 2rem;
+  color: white;
+  padding: .6rem 1.2rem;
+  border-radius: .5rem;
+}
+
+.projects .chat-app .content-container .stack .button-container .btn:hover,
+.projects .my-flix .content-container .stack .button-container .btn:hover {
+  cursor: pointer;
+  opacity: .7;
+}
+
+.projects .chat-app .content-container .stack .button-container .btn i,
+.projects .my-flix .content-container .stack .button-container .btn i {
+  color: white;
+  margin-right: .5rem;
+}
+
+.projects .chat-app .image-container,
+.projects .my-flix .image-container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.projects .chat-app .image-container img,
+.projects .my-flix .image-container img {
+  height: auto;
+  width: auto;
+  max-height: 40rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.projects .my-flix {
+  gap: 4rem;
+  border-top: 0.3rem solid rgba(85, 122, 149, 0.2);
+  border-bottom: 0.3rem solid rgba(85, 122, 149, 0.2);
+}
+
+.projects .my-flix .image-container img {
+  max-width: 50rem;
+  height: auto;
+  width: auto;
+}
+
+.projects .my-flix,
+.projects .chat-app {
+  padding: 8rem 0;
+}
+
+.projects .web-header {
+  padding-top: 8rem;
+  padding-bottom: 3rem;
+}
+
+.projects .web-header h3 {
+  font-size: 3rem;
+  color: #5d5c61;
+}
+
+.projects .web-designs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+  padding-bottom: 8rem;
+}
+
+.projects .web-designs .box {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  overflow: hidden;
+}
+
+.projects .web-designs .box .image-container {
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  border-radius: .5rem;
+  margin-bottom: 1rem;
+}
+
+.projects .web-designs .box .image-container img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: .5rem;
+  min-height: 18rem;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.projects .web-designs .box .image-container img:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+}
+
+.projects .web-designs .box .button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-top: 0.15rem solid #557a95;
+  border-bottom: 0.15rem solid #557a95;
+  padding: 1rem .5rem;
+}
+
+.projects .web-designs .box .button-container .title {
+  font-size: 1.8rem;
+  color: #557a95;
+}
+
+.projects .web-designs .box .button-container .icon-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: .5rem;
+  font-size: 1.4rem;
+}
+
+.projects .web-designs .box .button-container .icon-container a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  background: #557a95;
+  border-radius: .3rem;
+  padding: .4rem .6rem;
+}
+
+.projects .web-designs .box .button-container .icon-container a:hover {
+  opacity: .7;
+}
+
+.projects .web-designs .box .button-container .icon-container a i {
+  margin-right: .5rem;
+}
+
+.stack-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #5d5c61;
+}
+
+.stack-container i {
+  font-size: 2.5rem;
+  color: white;
+  height: 4rem;
+  width: 4rem;
+  line-height: 4rem;
+  border-radius: 1rem;
+  background: #557a95;
+  padding-top: .15rem;
+}
+
+.stack-container i:hover {
+  opacity: .7;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.contact .content-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 0.2rem solid #5d5c61;
+  border-radius: .8rem;
+  max-width: 60%;
+}
+
+.contact .content-container .top-container {
+  position: relative;
+  z-index: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url(/images/contact_form_2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.contact .content-container .top-container::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.contact .content-container .top-container .form-container {
+  position: relative;
+  top: 0;
+  left: 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.contact .content-container .top-container .form-container #sub-contact {
+  margin: 1.5rem;
+  border-right: .15rem solid white;
+  padding-right: 1.5rem;
+}
+
+.contact .content-container .top-container .form-container #sub-contact .name label,
+.contact .content-container .top-container .form-container #sub-contact .email label,
+.contact .content-container .top-container .form-container #sub-contact .number label,
+.contact .content-container .top-container .form-container #sub-contact .message label {
+  display: inline-block;
+  font-size: 1.8rem;
+  margin-bottom: .3rem;
+  text-transform: none;
+  color: white;
+}
+
+.contact .content-container .top-container .form-container #sub-contact .name input,
+.contact .content-container .top-container .form-container #sub-contact .email input,
+.contact .content-container .top-container .form-container #sub-contact .number input,
+.contact .content-container .top-container .form-container #sub-contact .message input {
+  width: 100%;
+  border: .15rem solid white;
+  border-radius: .5rem;
+  font-size: 1.6rem;
+  padding: .5rem;
+  color: white;
+  margin-bottom: 1rem;
+  background: none;
+}
+
+.contact .content-container .top-container .form-container #sub-contact .name input:focus,
+.contact .content-container .top-container .form-container #sub-contact .email input:focus,
+.contact .content-container .top-container .form-container #sub-contact .number input:focus,
+.contact .content-container .top-container .form-container #sub-contact .message input:focus {
+  border: 0.15rem solid rgba(255, 255, 255, 0.7);
+}
+
+.contact .content-container .top-container .form-container #sub-contact .name textarea,
+.contact .content-container .top-container .form-container #sub-contact .email textarea,
+.contact .content-container .top-container .form-container #sub-contact .number textarea,
+.contact .content-container .top-container .form-container #sub-contact .message textarea {
+  width: 100%;
+  width: 100%;
+  border: .15rem solid white;
+  border-radius: .5rem;
+  font-size: 1.6rem;
+  padding: .5rem;
+  color: white;
+  height: 15rem;
+  background: none;
+}
+
+.contact .content-container .top-container .form-container #sub-contact .name textarea:focus,
+.contact .content-container .top-container .form-container #sub-contact .email textarea:focus,
+.contact .content-container .top-container .form-container #sub-contact .number textarea:focus,
+.contact .content-container .top-container .form-container #sub-contact .message textarea:focus {
+  border: 0.15rem solid rgba(255, 255, 255, 0.7);
+}
+
+.contact .content-container .top-container .form-container #sub-contact .name textarea:focus::-webkit-input-placeholder,
+.contact .content-container .top-container .form-container #sub-contact .email textarea:focus::-webkit-input-placeholder,
+.contact .content-container .top-container .form-container #sub-contact .number textarea:focus::-webkit-input-placeholder,
+.contact .content-container .top-container .form-container #sub-contact .message textarea:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+.contact .content-container .top-container .form-container #sub-contact .name textarea:focus:-ms-input-placeholder,
+.contact .content-container .top-container .form-container #sub-contact .email textarea:focus:-ms-input-placeholder,
+.contact .content-container .top-container .form-container #sub-contact .number textarea:focus:-ms-input-placeholder,
+.contact .content-container .top-container .form-container #sub-contact .message textarea:focus:-ms-input-placeholder {
+  opacity: 0;
+}
+
+.contact .content-container .top-container .form-container #sub-contact .name textarea:focus::-ms-input-placeholder,
+.contact .content-container .top-container .form-container #sub-contact .email textarea:focus::-ms-input-placeholder,
+.contact .content-container .top-container .form-container #sub-contact .number textarea:focus::-ms-input-placeholder,
+.contact .content-container .top-container .form-container #sub-contact .message textarea:focus::-ms-input-placeholder {
+  opacity: 0;
+}
+
+.contact .content-container .top-container .form-container #sub-contact .name textarea:focus::placeholder,
+.contact .content-container .top-container .form-container #sub-contact .email textarea:focus::placeholder,
+.contact .content-container .top-container .form-container #sub-contact .number textarea:focus::placeholder,
+.contact .content-container .top-container .form-container #sub-contact .message textarea:focus::placeholder {
+  opacity: 0;
+}
+
+.contact .content-container .top-container .form-container #sub-contact .name textarea::-webkit-input-placeholder,
+.contact .content-container .top-container .form-container #sub-contact .email textarea::-webkit-input-placeholder,
+.contact .content-container .top-container .form-container #sub-contact .number textarea::-webkit-input-placeholder,
+.contact .content-container .top-container .form-container #sub-contact .message textarea::-webkit-input-placeholder {
+  color: white;
+  opacity: .7;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+}
+
+.contact .content-container .top-container .form-container #sub-contact .name textarea:-ms-input-placeholder,
+.contact .content-container .top-container .form-container #sub-contact .email textarea:-ms-input-placeholder,
+.contact .content-container .top-container .form-container #sub-contact .number textarea:-ms-input-placeholder,
+.contact .content-container .top-container .form-container #sub-contact .message textarea:-ms-input-placeholder {
+  color: white;
+  opacity: .7;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+}
+
+.contact .content-container .top-container .form-container #sub-contact .name textarea::-ms-input-placeholder,
+.contact .content-container .top-container .form-container #sub-contact .email textarea::-ms-input-placeholder,
+.contact .content-container .top-container .form-container #sub-contact .number textarea::-ms-input-placeholder,
+.contact .content-container .top-container .form-container #sub-contact .message textarea::-ms-input-placeholder {
+  color: white;
+  opacity: .7;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+}
+
+.contact .content-container .top-container .form-container #sub-contact .name textarea::placeholder,
+.contact .content-container .top-container .form-container #sub-contact .email textarea::placeholder,
+.contact .content-container .top-container .form-container #sub-contact .number textarea::placeholder,
+.contact .content-container .top-container .form-container #sub-contact .message textarea::placeholder {
+  color: white;
+  opacity: .7;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+}
+
+.contact .content-container .top-container .bio {
+  height: 100%;
+  text-align: center;
+  padding-right: 1.5rem;
+}
+
+.contact .content-container .top-container .bio .logo {
+  margin-bottom: 1rem;
+}
+
+.contact .content-container .top-container .bio .logo .initials {
+  display: inline-block;
+  color: white;
+  font-size: 3rem;
+  height: 5.9rem;
+  width: 5.9rem;
+  line-height: 5.9rem;
+  border: .15rem solid white;
+  background: #557a95;
+  border-radius: 50%;
+  letter-spacing: .15rem;
+  text-align: center;
+}
+
+.contact .content-container .top-container .bio h3 {
+  font-size: 2rem;
+  color: white;
+}
+
+.contact .content-container .top-container .bio .location {
+  font-size: 1.8rem;
+  color: white;
+}
+
+.contact .content-container .social-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #5d5c61;
+  padding: 1rem;
+  gap: 2rem;
+  border-top: .15rem solid white;
+}
+
+.contact .content-container .social-container .twitter,
+.contact .content-container .social-container .insta,
+.contact .content-container .social-container .linked,
+.contact .content-container .social-container .git {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact .content-container .social-container .twitter a,
+.contact .content-container .social-container .insta a,
+.contact .content-container .social-container .linked a,
+.contact .content-container .social-container .git a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  line-height: 4rem;
+  background: #557a95;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.contact .content-container .social-container .twitter a:hover,
+.contact .content-container .social-container .insta a:hover,
+.contact .content-container .social-container .linked a:hover,
+.contact .content-container .social-container .git a:hover {
+  opacity: .7;
+  border: .1rem solid white;
+}
+
+.contact .content-container .social-container .twitter a i,
+.contact .content-container .social-container .insta a i,
+.contact .content-container .social-container .linked a i,
+.contact .content-container .social-container .git a i {
+  display: inline-block;
+  font-size: 2.5rem;
+  color: white;
+  margin-top: .2rem;
+}
+
+.contact .content-container .social-container .twitter::before,
+.contact .content-container .social-container .insta::before,
+.contact .content-container .social-container .linked::before,
+.contact .content-container .social-container .git::before {
+  position: absolute;
+  top: calc(100% + 1rem);
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  content: attr(data-tooltip);
+  text-align: center;
+  background: #557a95;
+  color: white;
+  font-size: 1.8rem;
+  padding: .5rem .8rem;
+  border-radius: .7rem;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.contact .content-container .social-container .twitter::after,
+.contact .content-container .social-container .insta::after,
+.contact .content-container .social-container .linked::after,
+.contact .content-container .social-container .git::after {
+  position: absolute;
+  content: '';
+  background: #557a95;
+  height: 1.5rem;
+  width: 2.5rem;
+  top: calc(100% + .2rem);
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-clip-path: polygon(50% 0, 100% 100%, 0 100%, 50% 0);
+          clip-path: polygon(50% 0, 100% 100%, 0 100%, 50% 0);
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+}
+
+.contact .content-container .social-container .twitter::before, .contact .content-container .social-container .twitter::after,
+.contact .content-container .social-container .insta::before,
+.contact .content-container .social-container .insta::after,
+.contact .content-container .social-container .linked::before,
+.contact .content-container .social-container .linked::after,
+.contact .content-container .social-container .git::before,
+.contact .content-container .social-container .git::after {
+  opacity: 0;
+}
+
+.contact .content-container .social-container .twitter:hover::before, .contact .content-container .social-container .twitter:hover::after,
+.contact .content-container .social-container .insta:hover::before,
+.contact .content-container .social-container .insta:hover::after,
+.contact .content-container .social-container .linked:hover::before,
+.contact .content-container .social-container .linked:hover::after,
+.contact .content-container .social-container .git:hover::before,
+.contact .content-container .social-container .git:hover::after {
+  opacity: 1;
+}
+
+.footer {
+  position: relative;
+  z-index: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: url(/images/footer_2.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 3rem;
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.footer h1 {
+  font-size: 3rem;
+  color: white;
+  -webkit-animation: outro 3s ease-in-out alternate infinite;
+          animation: outro 3s ease-in-out alternate infinite;
+}
+
+@media (min-width: 1200px) {
+  header .icon-container {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  header .icon-container {
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  header .icon-container {
+    display: none;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

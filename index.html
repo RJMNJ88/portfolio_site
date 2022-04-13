@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <title>Robby Moore</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+
+    <!-- DevIcons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/css/styles.css">
+
+</head>
+<body>
+    <header>
+
+        <div class="logo">
+            <a href="#home" class="initials">RM</a>
+            <a href="#home" class="full-name">RobbyMoore</a>
+        </div>
+
+        <div class="menu">
+            <a href="#about">about</a>
+            <a href="#projects">projects</a>
+            <a href="#contact">contact</a>
+        </div>
+
+        <div class="icon-container">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+    </header>
+
+    <section class="home" id="home">
+        <div class="content-container">
+            <div class="image-container">
+                <img src="/images/home-image-1.jpg" alt="">
+            </div>
+            <div class="content">
+                <h2>Robby Moore</h2>
+                <h3>web developer & designer | Philadelphia, PA, USA<i class="fa-solid fa-bell"></i></h3>
+                <button class="btn" id="open-modal">Get In Touch</button>
+            </div>
+        </div>
+        <dialog class="modal">
+            <h3 class="title">Get In Touch!</h3>
+            <form action="https://formspree.io/f/xnqwgnyr" method="POST" class="contact-form" id="contact-form">
+                <form-group class="first-name">
+                    <input type="text" name="name" placeholder="name">
+                </form-group>
+                <form-group class="email">
+                    <input type="email" name="email" placeholder="email">
+                </form-group>
+                <form-group class="message">
+                    <textarea name="message" id="" cols="30" rows="10" placeholder="enter your message ..."></textarea>
+                </form-group>
+                <form-group class="button">
+                    <button class="btn" type="submit">Submit</button>
+                </form-group>
+            </form>
+            <button class="btn" id="close-modal"><i class="fa-solid fa-xmark"></i></button>
+            <div class="status" id="status"></div>
+        </dialog>
+    </section>
+
+    <section class="about" id="about">
+        <div class="content-container">
+            <div class="content">
+                <h3>About Me</h3>
+                <div class="body">
+                    <p class="summary">
+                        Hello ! My name's Robby Moore and I'm a Web Developer and Designer living and working
+                        in Philadelphia, PA. I have a passion for bringing clean and functional 
+                        web designs to end users. All of my work focuses on delivering a positive 
+                        User Experience through an aesthetically pleasing and minimalistic User 
+                        Interface. If you'd like to know more about me and my design process, or
+                        if you're in need of Web Design Services, please do not hesitate to reach
+                        out !
+                    </p>
+                </div>
+                <p class="attribution">~ Robby ~</p>
+            </div>
+            <div class="image-container">
+                <img src="/images/about-image-1.jpg" alt="">
+                <div class="social-container">
+                    <div class="twitter" data-tooltip="Twitter">
+                        <a href="https://twitter.com/robby_moore_123" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    <div class="insta" data-tooltip="Instagram">
+                        <a href="https://www.linkedin.com/in/robert-moore-561b7b219" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <div class="linked" data-tooltip="LinkedIn">
+                        <a href="https://www.linkedin.com/in/robert-moore-561b7b219" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="git" data-tooltip="GitHub">
+                        <a href="https://github.com/RJMNJ88" target="_blank"><i class="fa-brands fa-github"></i></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <div class="chat-app">
+            <div class="image-container">
+                <img src="images/chat_display_new.png" alt="">
+            </div>
+            <div class="content-container">
+                <div class="title">
+                    <h3>Mobile Chat App:</h3>
+                </div>
+                <div class="description">
+                    <p>
+                        Chat application for mobile devices built using React Native.
+                        Users will be able to use a chat interface to send messages, 
+                        share photos, and share their location.
+                    </p>
+                </div>
+                <div class="stack">
+                    <div class="icon-container">
+                        <i class="devicon-react-original"></i>
+                        <i class="devicon-javascript-plain"></i>
+                        <i class="devicon-firebase-plain"></i>
+                    </div>
+                    <div class="button-container">
+                        <a href="" class="btn"><i class="fa-solid fa-code-branch"></i>Source</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="my-flix">
+            <div class="content-container">
+                <div class="title">
+                    <h3>Movie Application/Database:</h3>
+                </div>
+                <div class="description">
+                    <p>
+                        Film database and website with the client-side built 
+                        using Angular. Users can browse movies, create a profile, 
+                        and add movies to a list of favorites.
+                    </p>
+                </div>
+                <div class="stack">
+                    <div class="icon-container">
+                        <i class="devicon-mongodb-plain"></i>
+                        <i class="devicon-express-original"></i>
+                        <i class="devicon-angularjs-plain"></i>
+                        <i class="devicon-nodejs-plain"></i>
+                    </div>
+                    <div class="button-container">
+                        <a href="" class="btn"><i class="fa-solid fa-code-branch"></i>Source</a>
+                        <a href="" class="btn"><i class="fa-solid fa-clapperboard"></i>Visit</a>
+                    </div>
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="/images/myFlix_display_edit.png" alt="">
+            </div>
+        </div>
+        <div class="web-header">
+            <h3>Web Designs:</h3>
+        </div>
+        <div class="web-designs">
+            <div class="box">
+                <div class="image-container">
+                    <img src="/images/coffee_home.png" alt="">
+                </div>
+                <div class="button-container">
+                    <div class="title">
+                        <h3>Coffee Shop</h3>
+                    </div>
+                    <div class="icon-container">
+                        <a href=""><i class="fa-solid fa-code-branch"></i>Source</a>
+                        <a href=""><i class="fa-solid fa-mug-hot"></i>Visit</a>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image-container">
+                    <img src="/images/grocery_home.png" alt="">
+                </div>
+                <div class="button-container">
+                    <div class="title">
+                        <h3>Grocery Store</h3>
+                    </div>
+                    <div class="icon-container">
+                        <a href=""><i class="fa-solid fa-code-branch"></i>Source</a>
+                        <a href=""><i class="fa-solid fa-bag-shopping"></i>Visit</a>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image-container">
+                    <img src="/images/cycle_home.png" alt="">
+                </div>
+                <div class="button-container">
+                    <div class="title">
+                        <h3>Cycle Shop</h3>
+                    </div>
+                    <div class="icon-container">
+                        <a href=""><i class="fa-solid fa-code-branch"></i>Source</a>
+                        <a href=""><i class="fa-solid fa-person-biking"></i>Visit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stack-container">
+        <i class="devicon-html5-plain"></i>
+        <i class="devicon-css3-plain"></i>
+        <i class="devicon-javascript-plain"></i>
+        <i class="devicon-react-original"></i>
+        <i class="devicon-angularjs-plain"></i>
+        <i class="devicon-mongodb-plain"></i>
+        <i class="devicon-mysql-plain"></i>
+        <i class="devicon-nodejs-plain"></i>
+        <i class="devicon-github-original"></i>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="content-container">
+            <div class="top-container">
+                <div class="form-container">
+                    <form action="https://formspree.io/f/xnqwgnyr" class="sub-contact" id="sub-contact">
+                        <form-group class="name">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name">
+                        </form-group>
+                        <form-group class="email">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email">
+                        </form-group>
+                        <form-group class="number">
+                            <label for="number">Number (optional):</label>
+                            <input type="number" id="number">
+                        </form-group>
+                        <form-group class="message">
+                            <label for="message">Message:</label>
+                            <textarea name="message" id="" cols="30" rows="10" id="message" placeholder="enter message here..."></textarea>
+                        </form-group>
+                    </form>
+                </div>
+                <div class="bio">
+                    <div class="logo">
+                        <a href="#home" class="initials">RM</a>
+                    </div>
+                    <h3>Robby Moore</h3>
+                    <!-- <p class="my-email"><i class="fa-solid fa-envelope"></i>: robbymoore123@gmail.com</p> -->
+                    <h3 class="location">Phila, PA, USA</h3>
+                </div>
+            </div>
+            <div class="social-container">
+                <div class="twitter" data-tooltip="Twitter">
+                    <a href="https://twitter.com/robby_moore_123" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div class="insta" data-tooltip="Instagram">
+                    <a href="https://www.linkedin.com/in/robert-moore-561b7b219" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <div class="linked" data-tooltip="LinkedIn">
+                    <a href="https://www.linkedin.com/in/robert-moore-561b7b219" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <div class="git" data-tooltip="GitHub">
+                    <a href="https://github.com/RJMNJ88" target="_blank"><i class="fa-brands fa-github"></i></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <h1>thanks for stopping by</h1>
+    </footer>
+
+    
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- JS -->
+    <script src="/js/script.js"></script>
+</body>
+</html>
+
+<!-- Form endpoint: https://formspree.io/f/xnqwgnyr -->

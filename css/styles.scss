@@ -854,6 +854,23 @@ header {
                         }
                     }
                 }
+
+                .button-container {
+
+                    .btn {
+                        font-size: 1.8rem;
+                        background: $cavalry;
+                        padding: .5rem 1.5rem;
+                        border-radius: .5rem;
+                        color: white;
+                        margin-top: .4rem;
+
+                        &:hover {
+                            cursor: pointer;
+                            opacity: .7;
+                }
+                    }
+                }
             }
 
             .bio {
@@ -994,13 +1011,14 @@ header {
     position: relative;
     z-index: 0;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     background: url(/images/footer_2.jpg);
     background-size: cover;
     background-position: center;
-    padding: 3rem;
-    min-height: 9.5rem;
+    margin: 0; padding: 0;
+    height: 9.5rem;
 
     &::before {
         content: '';
@@ -1016,6 +1034,18 @@ header {
         font-size: 3rem;
         color: white;
         animation: outro 3s ease-in-out alternate infinite;
+        margin-bottom: 1rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+        color: white;
+        font-weight: lighter;
+
+        span {
+            font-weight: bold;
+            font-size: 2.2rem;
+        }
     }
 }
 

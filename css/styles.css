@@ -44,6 +44,7 @@ html {
   font-size: 62.5%;
   text-transform: capitalize;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 html ::-webkit-scrollbar {

@@ -61,4 +61,15 @@ var form = document.getElementById("contact-form");
       if(e.key === "Escape") {
         status.classList.remove('active');
       }
-  }
+    
+    }
+
+// Menu button functionality
+let menuBtn = document.querySelector('#menu-btn');
+let menu = document.querySelector('.menu');
+
+menuBtn.onclick = () => {
+  menu.classList.toggle('active');
+  menuBtn.classList.toggle('fa-xmark');
+  menuBtn.classList.toggle('active');
+}

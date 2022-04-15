@@ -155,6 +155,11 @@ header {
 
             &:hover {
                 cursor: pointer;
+                opacity: .7;
+            }
+
+            &.active {
+                transform: rotate(180deg);
             }
         }
     }
@@ -1035,12 +1040,14 @@ header {
         color: white;
         animation: outro 3s ease-in-out alternate infinite;
         margin-bottom: 1rem;
+        text-align: center;
     }
 
     h3 {
         font-size: 2rem;
         color: white;
         font-weight: lighter;
+        text-align: center;
 
         span {
             font-weight: bold;
@@ -1050,30 +1057,7 @@ header {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// Media queries
 
 @media (min-width: 1200px) {
 
@@ -1097,6 +1081,10 @@ header {
 
 @media (max-width: 991px) {
 
+    html {
+        font-size: 55%;
+    }
+
     header {
 
         .icon-container {
@@ -1106,11 +1094,143 @@ header {
 }
 
 @media (max-width: 768px) {
-    
+    html {
+        font-size: 50%;
+    }
+
+    .about {
+        padding-bottom: 4rem;
+
+        .content-container {
+            flex-direction: column;
+            gap: 2rem;
+
+            .image-container {
+                border: none;
+            }
+        }
+    }
+
+    .projects {
+
+        .chat-app,
+        .my-flix {
+            flex-direction: column;
+        }
+
+        .web-designs {
+            align-items: center;
+
+            #grocery-box,
+            #coffee-box,
+            #cycle-box {
+                margin: 0;
+            }
+        }
+    }
+
+    .contact {
+
+        .content-container {
+            max-width: 90%;
+        }
+    }
 }
 
 @media (max-width: 450px) {
     
+    header {
+        position: fixed;
+
+        .menu {
+            position: absolute;
+            top: 100%; left: 0;
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            padding-top: .5rem;
+            // padding-left: ;
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            
+            &.active {
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            }
+
+            a {
+                color: $cavalry;
+                margin-bottom: 1.5rem;
+                font-size: 2.6rem;
+                border-bottom: .15rem solid $cavalry;
+                
+            }
+
+        }
+
+        .icon-container {
+            display: flex;
+            margin-left: auto;
+
+            i {
+                color: white;
+            }
+        }
+    }
+
+    .home {
+
+        .content-container {
+            flex-direction: column;
+            gap: 2rem;
+
+            .image-container {
+                border: none;
+            }
+
+            .content {
+
+                h2 {
+                    margin: 0;
+                }
+
+                h3 {
+                    margin-bottom: .5rem;
+                }
+            }
+        }
+    }
+
+    .stack-container {
+    
+        i {
+            font-size: 2rem;
+            height: 3.5rem;
+            width: 3.5rem;
+            line-height: 3.5rem;
+        }
+    }  
+
+    .contact {
+
+        .content-container {
+            max-width: 100%;
+
+            .top-container {
+
+                .form-container {
+                    padding-right: none;
+
+                    #sub-contact {
+                        border-right: none;
+                        padding-right: 0;
+                    }
+                }
+
+                .bio {
+                    display: none;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 320px) {

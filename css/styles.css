@@ -1066,7 +1066,7 @@ header .icon-container i.active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: url(images/contact_form_2.jpg);
+  background: url("/images/contact_form_2.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -1450,7 +1450,7 @@ header .icon-container i.active {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: url(./images/footer_2.jpg);
+  background: url(/images/footer_2.jpg);
   background-size: cover;
   background-position: center;
   margin: 0;

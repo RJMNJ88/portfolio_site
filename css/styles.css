@@ -142,7 +142,7 @@ header .menu a:hover {
 
 header .icon-container i {
   font-size: 2.5rem;
-  color: #282612;
+  color: white;
 }
 
 header .icon-container i:hover {
@@ -1231,6 +1231,35 @@ header .icon-container i.active {
 .contact .content-container .top-container .form-container .button-container .btn:hover {
   cursor: pointer;
   opacity: .7;
+}
+
+.contact .content-container .top-container .form-container .sub-status {
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  height: 8rem;
+  width: 8rem;
+  line-height: 8rem;
+  font-size: 3.5rem;
+  color: white;
+  opacity: .8;
+  background: #557a95;
+  border-radius: 50%;
+}
+
+.contact .content-container .top-container .form-container .sub-status.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .contact .content-container .top-container .bio {

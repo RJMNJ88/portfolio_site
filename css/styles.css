@@ -1,29 +1,23 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Arapey&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rokkitt:wght@300;400;500;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Carme&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;500;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap");
 @-webkit-keyframes outro {
   0% {
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
   }
   100% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
   }
 }
 @keyframes outro {
   0% {
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
   }
   100% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
   }
 }
 
@@ -1072,7 +1066,7 @@ header .icon-container i.active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: url(images/contact_form_2.jpg);
+  background: url(/images/contact_form_2.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -1427,7 +1421,7 @@ header .icon-container i.active {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: url(images/footer_2.jpg);
+  background: url(/images/footer_2.jpg);
   background-size: cover;
   background-position: center;
   margin: 0;
@@ -1447,6 +1441,7 @@ header .icon-container i.active {
 }
 
 .footer h1 {
+  font-family: 'Tangerine', cursive;
   font-size: 3rem;
   color: white;
   -webkit-animation: outro 3s ease-in-out alternate infinite;
